@@ -6,3 +6,4 @@ Use this for fun.
 Coders, These are my stupid projects.
 
 Where it says "insert-here" put anything.
+# Starters, play!
