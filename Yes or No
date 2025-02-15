@@ -1,0 +1,27 @@
+@echo off
+:prompt
+cls
+echo ====================================
+echo Do you want to continue? (yes/no)
+echo ====================================
+set /p answer=Type your answer: 
+
+if /i "%answer%"=="yes" (
+    echo Thank you! Continuing the program...
+    goto continue
+) else if /i "%answer%"=="no" (
+    echo Exiting the program. Goodbye!
+    goto end
+) else (
+    echo Invalid input. Please type "yes" or "no".
+    pause
+    goto prompt
+)
+
+:continue
+start cmd
+notepad
+cd insert-here
+start insert-here
+:end
+exit
